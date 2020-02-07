@@ -1,13 +1,13 @@
 @import "abstracts/functions";
 @import "abstracts/variables";
-
 @import "base/reset";
 @import "base/typography";
 @import "base/utilities";
-
 @import "components/buttons";
 @import "components/form";
-
+@import "components/card";
+@import "components/technology";
+@import "components/apps";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/nav";

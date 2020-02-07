@@ -1,0 +1,17 @@
+$text-font-stack: 'Lato',
+sans-serif !default;
+$white: #FFFFFF;
+$black: #000000;
+$red: #EE3D1B;
+$darkred: #D52047;
+$redbutton: #ED4C5C;
+/// Container's maximum width
+/// @type Length
+$max-width: 1440px !default;
+$medium-width: 768px;
+$small-width: 320px;
+$min-width: 250px;
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ( 'small': 320px, 'medium': 768px, 'large': 1440px, ) !default;
