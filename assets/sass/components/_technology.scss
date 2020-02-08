@@ -1,0 +1,78 @@
+.technology {
+  text-align: center;
+  padding-top: 63px;
+  background: $white;
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: $black;
+  }
+  &__step {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 63px 30px 30px 0;
+
+    &-number {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 100px;
+      line-height: 120px;
+      /* identical to box height */
+      color: rgba(16, 16, 16, 0.08);
+      margin-bottom: -70px;
+    }
+    &-image {
+      &1{
+      width: 80px;
+      height: 80px;
+      }
+      &2{
+        width: 66px;
+        height: 66px;
+        }
+      &3{
+      width: 70px;
+      height: 70px;
+      }
+      
+      &4{
+        width: 47px;
+        height: 54px;
+        }
+    }
+    &-item {
+      margin-top: 57px;
+    }
+    &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+      color: $cardblack;
+    //   padding: 33px 32px 20px 32px;
+    }
+    &-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        padding-top: 10px;
+      color: $black;
+    //   padding: 0 32px 5px 32px;
+    }
+    &-link {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 150%;
+      /* identical to box height, or 18px */
+      color: $redbutton;
+    }
+  }
+}

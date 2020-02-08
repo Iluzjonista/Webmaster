@@ -1,0 +1,37 @@
+.header {
+  background-image: linear-gradient(
+      90deg,
+      rgba(213, 32, 71, 0.8) 0%,
+      rgba(238, 61, 27, 0.8) 100%
+    ),
+    url(../img/header-bg.png);
+  background-size: cover;
+  height: 782px;
+  padding-top: 59px;
+  color: $white;
+  &__content {
+      padding-top:176px;
+    font-style: normal;
+    text-align: center;
+    &-title {
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 86px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    &-text {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 540px;
+        padding-top:40px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      /* or 36px */
+      padding-bottom:40px;
+    }
+  }
+}

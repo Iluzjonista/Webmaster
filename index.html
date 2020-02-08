@@ -1,71 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>CloudBudget</title>
     <script type="text/javascript" src="./assets/js/main.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="intro">
-        <header class="header">
-            <div class="wrapper">
-                <div class="header__nav">
-                    <div class="header__logo">
-                        <img src="./assets/img/logo.svg" alt="" class="header__logo-pic">
-                        <div class="header__logo-name">Cloudbudget</div>
-                    </div>
-                    <div class="header__menu">
-                        <a href="#" class="header__menu-item">OVERVIEW</a>
-                        <a href="#" class="header__menu-item">FEATURES</a>
-                        <a href="#" class="header__menu-item">TECHNOLOGY</a>
-                        <a href="#" class="header__menu-item">CONTACT</a>
-                        <a href="#" class="header__menu-item">Sign up</a>
-                    </div>
+      <header class="header">
+        <div class="container">
+          <div class="wrapper">
+            <div class="header__nav">
+              <div class="header__logo">
+                <img
+                  src="./assets/img/logo-cloud.svg"
+                  alt="CloudBudget logo"
+                  class="header__logo-pic"
+                />
+                <div class="header__logo-name">
+                  <a href="#intro" class="header__menu-link">Cloudbudget</a>
                 </div>
-                <div class="header__content">
-                    <div class="header__content-title">Cloudbudget</div>
-                    <div class="header__content-text">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99</div>
-                    <button class="header__content-button">Sign Up</button>
-                </div>
+              </div>
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <a href="#overview" class="header__menu-link active"
+                    >OVERVIEW</a
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <a href="#feat" class="header__menu-link">FEATURES</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#technology" class="header__menu-link">TECHNOLOGY</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#contact" class="header__menu-link">CONTACT</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Sign up</a>
+                </li>
+              </ul>
             </div>
-        </header>
+            <div class="header__content" id="overview">
+              <div class="header__content-title">Cloudbudget</div>
+              <div class="header__content-text">
+                Cloud budget management for everyone. Only €69.95 a Month After
+                a 7 Day Trial of Up to €4.99
+              </div>
+              <button class="header__content-button button button__sign">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
     </section>
 
     <section id="feat">
-        <div class="features">
-            <div class="wrapper">
-                <div class="features__title">
-                    <h2>Features</h2>
+      <div class="features container">
+        <div class="wrapper">
+          <div class="features__title">
+            Features
+          </div>
+          <div class="row">
+            <div class="features__card">
+              <img
+                src="./assets/img/feat1.jpg"
+                alt=""
+                class="features__card-image"
+              />
+              <div class="features__card-item">
+                <div class="features__card-title">
+                  Supports All Currencies and Cards
                 </div>
-                <div class="features__card">
-
+                <p class="features__card-text">
+                  We support all popular currencies and is fully customizable to
+                  add
+                </p>
+                <a href="/" class="features__card-link">Read More</a>
+              </div>
+            </div>
+            <div class="features__card">
+              <img
+                src="./assets/img/feat2.jpg"
+                alt=""
+                class="features__card-image"
+              />
+              <div class="features__card-item">
+                <div class="features__card-title">
+                  Manage your expenses on the go
                 </div>
-                <div class="features__card">
-
+                <p class="features__card-text">
+                  You can access your account from anywhere in the world on any
+                  device
+                </p>
+                <a href="/" class="features__card-link">Read More</a>
+              </div>
+            </div>
+            <div class="features__card">
+              <img
+                src="./assets/img/feat3.jpg"
+                alt=""
+                class="features__card-image"
+              />
+              <div class="features__card-item">
+                <div class="features__card-title">
+                  Cloud Budget Management Software
                 </div>
-                <div class="features__card">
-
-                </div>
-                Supports All Currencies and Cards We support all popular currencies and is fully customizable to add Read More Manage your expenses on the go You can access your account from anywhere in the world on any device Read More Cloud Budget Management Software
-                Our software is made so you can access and manage your budget Read More
-
+                <p class="features__card-text">
+                  Our software is made so you can access and manage your budget
+                </p>
+                <a href="/" class="features__card-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="technology">
-        <h2>Technology</h2>
-        Cloud Storage Access your account from anywhere in the world on any device Secure All your information is stored on secure cloud servers PDF Download Download any of your reports in PDF format CSV Download All your information is stored on secure cloud
-        servers
+      <div class="technology container">
+        <div class="wrapper">
+          <div class="technology__title">
+            Technology
+          </div>
+          <div class="row">
+            <div class="technology__step">
+              <div class="technology__step-item">
+                <div class="technology__step-number">
+                  01
+                </div>
+                <img
+                  src="./assets/img/cloud.svg"
+                  alt="Cloud icon"
+                  class="technology__step-image1"
+                />
+                <div class="technology__step-title">
+                  Cloud Storage
+                </div>
+                <p class="technology__step-text">
+                  Access your account from anywhere in the world on any device
+                </p>
+              </div>
+            </div>
+            <div class="technology__step">
+              <div class="technology__step-item">
+                <div class="technology__step-number">
+                  02
+                </div>
+                <img
+                  src="./assets/img/shield.svg"
+                  alt="Shield icon"
+                  class="technology__step-image2"
+                />
+                <div class="technology__step-title">
+                  Secure
+                </div>
+                <p class="technology__step-text">
+                  All your information is stored on secure cloud servers
+                </p>
+              </div>
+            </div>
+            <div class="technology__step">
+              <div class="technology__step-item">
+                <div class="technology__step-number">
+                  03
+                </div>
+                <img
+                  src="./assets/img/pdf.svg"
+                  alt="PDF icon"
+                  class="technology__step-image3"
+                />
+                <div class="technology__step-title">
+                  PDF Download
+                </div>
+                <div class="technology__step-text">
+                  Download any of your reports in PDF format
+                </div>
+              </div>
+            </div>
+            <div class="technology__step">
+              <div class="technology__step-item">
+                <div class="technology__step-number">
+                  04
+                </div>
+                <img
+                  src="./assets/img/csv.svg"
+                  alt="CSV icon"
+                  class="technology__step-image4"
+                />
+                <div class="technology__step-title">
+                  CSV Download
+                </div>
+                <p class="technology__step-text">
+                  All your information is stored on secure cloud servers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="focused">
-        Stay focused on saving money It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!
+      <div class="container">
+        <div class="wrapper">
+          <div class="apps">
+            <div class="apps__left">
+              <div class="apps__left-title">
+                Stay focused on saving money
+              </div>
+              <div class="apps__left-text">
+                It is important to stay focused on saving money in any way you
+                can. We help you monitor your spending habits so you can easily
+                spot and cut any unnecessary expenses. Simply join today to get
+                started!
+              </div>
+              <div class="apps__left_icons">
+                <img
+                  src="./assets/img/google-playstore.svg"
+                  alt="Playstore icon"
+                  class="apps__left_icons"
+                />
+                <img
+                  src="./assets/img/appstore.svg"
+                  alt="Appstore icon"
+                  class="apps__left_icons"
+                />
+                <img
+                  src="./assets/img/micro.svg"
+                  alt="Microsoft icon"
+                  class="apps__left_icons"
+                />
+              </div>
+            </div>
+            <div class="apps__right">
+              <img
+                src="./assets/img/Video_bg.jpg"
+                alt="Slider image"
+                class="apps__right-pic"
+              />
+              <img
+                src="./assets/img/Video_bg-1.jpg"
+                alt="Slider image1"
+                class="apps__right-pic toright"
+              />
+              <img
+                src="./assets/img/Video_bg-2.jpg"
+                alt="Slider image2"
+                class="apps__right-pic toleft"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-        Contact Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours
+      <div class="container">
+        <div class="wrapper">
+          <div class="form">
+            <div class="form__left">
+              <div class="form__left-title">
+                Contact
+              </div>
+              <div class="form__left-text">
+                Questions or concerns? Just fill out the form below and our
+                support team will get back to you within 24 hours
+              </div>
+            </div>
+            <div class="form__right">
+              <div class="form__right-name"></div>
+              <div class="form__right-phone"></div>
+              <div class="form__right-service"></div>
+              <button class="form__right-button button button__submit">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
-
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

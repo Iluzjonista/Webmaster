@@ -1,0 +1,39 @@
+.header__nav {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  &-pic {
+    padding-left: 5px;
+  }
+  &-name {
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-transform: uppercase;
+  }
+}
+.header__menu {
+  flex-direction: row;
+  display: flex;
+  list-style: none;
+  &-item {
+      padding: 0 .5em;
+  }
+  &-link {
+    display: block;
+    padding: .5em 0;
+    text-transform: uppercase;
+  }
+    .active{
+      font-weight: 700;
+  }
+}

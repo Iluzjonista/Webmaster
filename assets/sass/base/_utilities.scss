@@ -7,9 +7,10 @@
  */
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all .3s;
 }
-
 
 /**
    * Make all elements from the DOM inherit from the parent box-sizing
@@ -21,34 +22,31 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 
 /**
    * Basic styles for links
    */
 
 a {
-    color: $brand-color;
-    text-decoration: none;
-    @include on-event {
-        color: $text-color;
-        text-decoration: underline;
-    }
+  color: $white;
+  text-decoration: none;
+  // @include on-event {
+  //     color: $white;
+  //     text-decoration: underline;
+  // }
 }
-
 
 /**
  * Clear inner floats
  */
 
 .clearfix::after {
-    clear: both;
-    content: "";
-    display: table;
+  clear: both;
+  content: "";
+  display: table;
 }
-
 
 /**
      * Main content containers
@@ -58,52 +56,45 @@ a {
      */
 
 .container {
-    min-width: $min-width;
-    // max-width: $max-width; /* 1 */
-    margin-left: auto;
-    /* 2 */
-    margin-right: auto;
-    /* 2 */
-    padding-left: 20px;
-    /* 3 */
-    padding-right: 20px;
-    /* 3 */
-    width: 100%;
-    /* 1 */
+  min-width: $min-width;
+  // max-width: $max-width; /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */
 }
 
-.main-row {
-    display: flex;
-    flex-direction: column;
-    min-width: $min-width;
-    max-width: $max-width;
-    /* 1 */
-    margin-left: auto;
-    /* 2 */
-    margin-right: auto;
-    /* 2 */
-    width: 100%;
-    flex: 0 0 100%;
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 0 0 100%;
+}
+.wrapper {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: $medium-width) {
-    .main-row {
-        display: flex;
-        flex-direction: row;
-        flex-flow: flex-wrap;
-        min-width: $min-width;
-        max-width: $max-width;
-        /* 1 */
-        margin-left: auto;
-        /* 2 */
-        margin-right: auto;
-        /* 2 */
-        width: 100%;
-        flex: 0 0 100%;
-        padding: 10px;
-    }
-}
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex: 0 0 100%;
+  }
 
+  .wrapper {
+    width: 1110px;
+  }
+}
 
 /**
      * Hide text while making it readable for screen readers
@@ -112,13 +103,12 @@ a {
      */
 
 .hide-text {
-    overflow: hidden;
-    padding: 0;
-    /* 1 */
-    text-indent: 101%;
-    white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
 }
-
 
 /**
      * Hide element while making it readable for screen readers
@@ -127,12 +117,12 @@ a {
      */
 
 .visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
