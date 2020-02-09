@@ -6,32 +6,60 @@
     ),
     url(../img/header-bg.png);
   background-size: cover;
-  height: 782px;
+  background-position: center;
+  height: 586.5px;
   padding-top: 59px;
   color: $white;
+  @media only screen and (min-width: $medium-width) {
+    height: 782px;
+  }
   &__content {
-      padding-top:176px;
+    padding-top: 96px;
     font-style: normal;
     text-align: center;
+    @media only screen and (min-width: $medium-width) {
+      padding-top: 150px;
+    }
+    @media only screen and (min-width: $laptop-width) {
+      padding-top: 176px;
+    }
     &-title {
       font-weight: bold;
-      font-size: 72px;
-      line-height: 86px;
+      font-size: 36px;
+      line-height: 150%;
       letter-spacing: 0.05em;
       text-transform: uppercase;
+      @media only screen and (min-width: $small-width) {
+        font-size: 40px;
+      }
+      @media only screen and (min-width: $phone-width) {
+        font-size: 48px;
+        line-height: 56px;
+      }
+      @media only screen and (min-width: $medium-width) {
+        font-size: 54px;
+        line-height: 64.5px;
+      }
+      @media only screen and (min-width: $laptop-width) {
+        font-size: 72px;
+        line-height: 86px;
+      }
     }
     &-text {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        width: 540px;
-        padding-top:40px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 40px;
       font-style: normal;
       font-weight: 600;
-      font-size: 24px;
-      line-height: 150%;
-      /* or 36px */
-      padding-bottom:40px;
+      font-size: 18px;
+      line-height: 100%;
+      padding-bottom: 40px;
+      @media only screen and (min-width: $medium-width) {
+        width: 540px;
+        font-size: 24px;
+        line-height: 150%;
+      }
     }
   }
 }

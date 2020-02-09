@@ -9,7 +9,11 @@ $redbutton: #ED4C5C;
 /// Container's maximum width
 /// @type Length
 $max-width: 1440px !default;
+$big-width: 1280px;
+$laptop-width: 1024px;
+$break-width: 968px;
 $medium-width: 768px;
+$phone-width: 560px;
 $small-width: 320px;
 $min-width: 250px;
 /// Breakpoints map

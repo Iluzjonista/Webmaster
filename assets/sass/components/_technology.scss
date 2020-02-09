@@ -1,6 +1,7 @@
 .technology {
   text-align: center;
   padding-top: 63px;
+  padding-bottom: 108px;
   background: $white;
   &__title {
     font-weight: 600;
@@ -14,8 +15,12 @@
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    padding: 63px 30px 30px 0;
-
+    @media only screen and (min-width: $laptop-width) {
+      padding: 30px;
+    }
+    @media only screen and (min-width: $big-width) {
+      padding: 63px 30px 30px 0;
+    }
     &-number {
       font-style: normal;
       font-weight: bold;
@@ -26,45 +31,56 @@
       margin-bottom: -70px;
     }
     &-image {
-      &1{
-      width: 80px;
-      height: 80px;
+      &1 {
+        width: 80px;
+        height: 80px;
       }
-      &2{
-        width: 66px;
-        height: 66px;
-        }
-      &3{
-      width: 70px;
-      height: 70px;
+      &2 {
+        width: 80px;
+        height: 80px;
+        padding: 7px;
       }
-      
-      &4{
-        width: 47px;
-        height: 54px;
-        }
+      &3 {
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+      }
+
+      &4 {
+        width: 80px;
+        height: 80px;
+        padding: 13px 16.5px;
+      }
     }
     &-item {
       margin-top: 57px;
     }
     &-title {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height */
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
       color: $cardblack;
-    //   padding: 33px 32px 20px 32px;
-    }
-    &-text {
-        font-style: normal;
-        font-weight: normal;
+      //   padding: 33px 32px 20px 32px;
+      @media only screen and (min-width: $medium-width) {
         font-size: 12px;
         line-height: 14px;
-        text-align: center;
-        padding-top: 10px;
+      }
+      @media only screen and (min-width: $laptop-width) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      padding-top: 10px;
       color: $black;
-    //   padding: 0 32px 5px 32px;
+      //   padding: 0 32px 5px 32px;
     }
     &-link {
       font-style: normal;

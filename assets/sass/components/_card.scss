@@ -1,60 +1,92 @@
-.features{
+.features {
+  .row {
+    flex-direction: column;
+    @media only screen and (min-width: $break-width) {
+      flex-direction: row;
+    }
+  }
+  text-align: center;
+  padding-top: 63px;
+  background: $bg2;
+  flex-direction: column;
+  @media only screen and (min-width: $break-width) {
+    flex-direction: row;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: $black;
+  }
+  &__card {
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    padding-top:63px;
-    background: $bg2;
-
-    &__title{
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 43px;
-        color:$black;
+    justify-content: space-around;
+    padding: 15px;
+    @media only screen and (min-width: $laptop-width) {
+      padding: 30px;
     }
-    &__card{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        // flex: 0 0 33%;
-        justify-content: space-around;
-        padding:63px 30px 30px 0;
-
-        &-image{
-            width: 350px;
-            height: 250px;
-            border-radius: 8px;
-            margin-bottom: 292px;
-        }
-        &-item{
-            position: absolute;
-            width: 293px;
-            height: 198px;
-            background: $white;
-            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-top: 157px;
-            z-index:1;
-        }
-        &-title{
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 22px;
-            color: $cardblack;
-            padding: 33px 32px 20px 32px;
-        }
-        &-text{
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 150%;
-            /* or 18px */
-            color: $cardblack;
-            padding: 0 32px 5px 32px;
-        }
-        &-link{
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 150%;
-            /* identical to box height, or 18px */
-            color: $redbutton;
-        }
+    @media only screen and (min-width: $big-width) {
+      padding: 63px 30px 30px 0;
     }
+    &-image {
+      width: 350px;
+      height: 250px;
+
+      border-radius: 8px;
+      margin-bottom: 140px;
+      @media only screen and (min-width: $break-width) {
+        margin-bottom: 229px;
+      }
+      @media only screen and (max-width: $big-width) and (min-width: $break-width) {
+        width: 280px;
+        height: 200px;
+      }
+    }
+    &-item {
+      position: absolute;
+      width: 293px;
+      height: 198px;
+      background: $white;
+      box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 157px;
+      z-index: 1;
+      @media only screen and (max-width: $big-width) and (min-width: $break-width) {
+        width: 234px;
+        height: 158px;
+      }
+    }
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: $cardblack;
+      padding: 33px 32px 20px 32px;
+      @media only screen and (max-width: $big-width) and (min-width: $break-width) {
+        padding: 20px 20px 5px 20px;
+      }
+    }
+    &-text {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 150%;
+      /* or 18px */
+      color: $cardblack;
+      padding: 0 32px 5px 32px;
+      @media only screen and (max-width: $big-width) and (min-width: $break-width) {
+        padding: 0 20px 2px 20px;
+      }
+    }
+    &-link {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 150%;
+      /* identical to box height, or 18px */
+      color: $redbutton;
+    }
+  }
 }

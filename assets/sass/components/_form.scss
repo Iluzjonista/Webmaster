@@ -1,0 +1,99 @@
+.contactform {
+  background: $white;
+}
+.form {
+  padding-top: 117px;
+  padding-bottom: 78px;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: $big-width) {
+    flex-direction: row;
+  }
+  &__left {
+    color: $black;
+    flex: 0 0 100%;
+    @media only screen and (min-width: $big-width) {
+      flex: 0 0 50%;
+      padding-right: 125px;
+    }
+    &-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+    }
+    &-text {
+      padding-top: 60px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+      text-align: justify;
+    }
+  }
+  &__right {
+    flex: 0 0 100%;
+    padding-top: 44px;
+    @media only screen and (min-width: $big-width) {
+      flex: 0 0 50%;
+      padding-top: 0;
+    }
+    input:not([type="submit"]),
+    select {
+      border: 1px solid #333333;
+      box-sizing: border-box;
+      border-radius: 6px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 20px 31px;
+      width: 100%;
+      ::placeholder {
+        color: rgba(19, 39, 67, 0.5);
+        opacity: 1;
+      }
+    }
+    &-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      @media only screen and (min-width: $phone-width) {
+        flex-direction: row;
+      }
+      #firstName {
+        margin-bottom: 24px;
+        @media only screen and (min-width: $phone-width) {
+          margin-bottom: 0;
+          margin-right: 30px;
+        }
+      }
+    }
+    &-phone {
+      padding-bottom: 24px;
+      input {
+        width: 100%;
+      }
+    }
+    &-service {
+      padding-bottom: 27px;
+      select {
+        width: 100%;
+      }
+    }
+    &-button {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      text-transform: uppercase;
+    }
+  }
+}
+.error {
+  border: 2px solid $red !important;
+}

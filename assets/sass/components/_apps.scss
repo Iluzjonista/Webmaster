@@ -1,0 +1,110 @@
+.apps {
+  background: $redbutton;
+  &__combine {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 95px;
+    flex-direction: column;
+    @media only screen and (min-width: $laptop-width) {
+      flex-direction: row;
+    }
+  }
+  &__left {
+    flex: 0 0 100%;
+    @media only screen and (min-width: $laptop-width) {
+      flex: 0 0 50%;
+      padding-right: 119px;
+    }
+    color: $white;
+
+    &-title {
+      padding-top: 28px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+    }
+    &-text {
+      padding-top: 50px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+      text-align: justify;
+      padding-bottom: 42px;
+    }
+    &-icons {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      flex-direction: row;
+      &pic {
+        padding-right: 28px;
+      }
+    }
+  }
+  &__right {
+    flex: 0 0 100%;
+    padding-top: 44px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media only screen and (min-width: $laptop-width) {
+      flex: 0 0 50%;
+      padding-top: 0;
+      flex-direction: row;
+    }
+
+    &-pic {
+      border-radius: 15px;
+      object-fit: cover;
+      &.toleft,
+      &.toright {
+        opacity: 0.5;
+        z-index: 0;
+        width: 287px;
+        height: 200px;
+        @media only screen and (min-width: $laptop-width) {
+
+        }
+        @media only screen and (min-width: $big-width) {
+          width: 383px;
+          height: 267px;
+        }
+      }
+      &.toleft {
+        @media only screen and (min-width: $laptop-width) {
+          margin-right: -251px;
+        }
+        @media only screen and (min-width: $big-width) {
+          margin-right: -335px;
+        }
+      }
+      &.toright {
+        margin-top: -175px;
+        @media only screen and (min-width: $laptop-width) {
+          margin-top: 0;
+          margin-left: -251px;
+        }
+        @media only screen and (min-width: $big-width) {
+          margin-left: -335px;
+        }
+      }
+      &.main {
+        margin-top: -175px;
+        z-index: 1;
+        width: 334px;
+        height: 233px;
+        @media only screen and (min-width: $laptop-width) {
+          margin-top: 0;
+        }
+        @media only screen and (min-width: $big-width) {
+          width: 445px;
+          height: 311px;
+        }
+      }
+    }
+  }
+}

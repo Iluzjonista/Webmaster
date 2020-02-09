@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>CloudBudget</title>
     <script type="text/javascript" src="./assets/js/main.js"></script>
@@ -14,7 +18,7 @@
       <header class="header">
         <div class="container">
           <div class="wrapper">
-            <div class="header__nav">
+            <div class="header__nav" id="navigation">
               <div class="header__logo">
                 <img
                   src="./assets/img/logo-cloud.svg"
@@ -42,6 +46,15 @@
                 </li>
                 <li class="header__menu-item">
                   <a href="#" class="header__menu-link">Sign up</a>
+                </li>
+                <li class="header__menu-item mobile">
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="myFunction()"
+                  >
+                    <i class="fa fa-bars"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -141,9 +154,9 @@
                 <div class="technology__step-title">
                   Cloud Storage
                 </div>
-                <p class="technology__step-text">
+                <div class="technology__step-text">
                   Access your account from anywhere in the world on any device
-                </p>
+                </div>
               </div>
             </div>
             <div class="technology__step">
@@ -159,9 +172,9 @@
                 <div class="technology__step-title">
                   Secure
                 </div>
-                <p class="technology__step-text">
+                <div class="technology__step-text">
                   All your information is stored on secure cloud servers
-                </p>
+                </div>
               </div>
             </div>
             <div class="technology__step">
@@ -195,9 +208,9 @@
                 <div class="technology__step-title">
                   CSV Download
                 </div>
-                <p class="technology__step-text">
+                <div class="technology__step-text">
                   All your information is stored on secure cloud servers
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -205,9 +218,9 @@
       </div>
     </section>
     <section id="focused">
-      <div class="container">
+      <div class="apps container">
         <div class="wrapper">
-          <div class="apps">
+          <div class="apps__combine">
             <div class="apps__left">
               <div class="apps__left-title">
                 Stay focused on saving money
@@ -218,39 +231,39 @@
                 spot and cut any unnecessary expenses. Simply join today to get
                 started!
               </div>
-              <div class="apps__left_icons">
+              <div class="apps__left-icons">
                 <img
                   src="./assets/img/google-playstore.svg"
                   alt="Playstore icon"
-                  class="apps__left_icons"
+                  class="apps__left-iconspic"
                 />
                 <img
                   src="./assets/img/appstore.svg"
                   alt="Appstore icon"
-                  class="apps__left_icons"
+                  class="apps__left-iconspic"
                 />
                 <img
                   src="./assets/img/micro.svg"
                   alt="Microsoft icon"
-                  class="apps__left_icons"
+                  class="apps__left-iconspic"
                 />
               </div>
             </div>
             <div class="apps__right">
               <img
+                src="./assets/img/Video_bg-2.jpg"
+                alt="Slider image2"
+                class="apps__right-pic toleft"
+              />
+              <img
                 src="./assets/img/Video_bg.jpg"
                 alt="Slider image"
-                class="apps__right-pic"
+                class="apps__right-pic main"
               />
               <img
                 src="./assets/img/Video_bg-1.jpg"
                 alt="Slider image1"
                 class="apps__right-pic toright"
-              />
-              <img
-                src="./assets/img/Video_bg-2.jpg"
-                alt="Slider image2"
-                class="apps__right-pic toleft"
               />
             </div>
           </div>
@@ -258,7 +271,7 @@
       </div>
     </section>
     <section id="contact">
-      <div class="container">
+      <div class="contact_form container">
         <div class="wrapper">
           <div class="form">
             <div class="form__left">
@@ -270,14 +283,57 @@
                 support team will get back to you within 24 hours
               </div>
             </div>
-            <div class="form__right">
-              <div class="form__right-name"></div>
-              <div class="form__right-phone"></div>
-              <div class="form__right-service"></div>
-              <button class="form__right-button button button__submit">
-                Sign Up
-              </button>
-            </div>
+            <form
+              name="contactForm"
+              class="form__right"
+              onsubmit="return validationForm()"
+            >
+              <div class="form__right-name">
+                
+                <input
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  placeholder="First Name"
+                />
+
+                <input
+                  id="lastName"
+                  name="lastName "
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="form__right-phone">
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div class="form__right-service">
+                <select id="slctService" name="slctService">
+                  <option value="" disabled hidden selected
+                    >Select Service</option
+                  >
+                  <option value="Service1">Service 1</option>
+                  <option value="Service2">Service 2</option>
+                  <option value="Service3">Service 3</option>
+                  <option value="Service4">Service 4</option>
+                </select>
+              </div>
+              <!-- <button class="form__right-button button button__submit">
+                Submit now
+              </button> -->
+              <input
+                type="submit"
+                value="Submit now"
+                name="Submit"
+                class="form__right-button button button__submit
+              "
+              />
+            </form>
           </div>
         </div>
       </div>
