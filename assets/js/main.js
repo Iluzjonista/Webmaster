@@ -1,9 +1,12 @@
 function myFunction() {
   var x = document.getElementById("navigation");
+  var y = document.getElementById("overview");
   if (x.className === "header__nav") {
     x.className += " responsive";
+    y.style.paddingTop = '0';
   } else {
     x.className = "header__nav";
+    y.style.paddingTop = '';
   }
 }
 
